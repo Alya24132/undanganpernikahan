@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Undangan Pernikahan</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- AOS Library CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Background Music -->
+  <audio id="musik" preload="auto" loop>
+    <source src="musik.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Gambar Ikon Musik -->
+  <img id="musicIcon" src="iconmusik.png" alt="Musik">
+
+  <!-- Opening Section -->
+  <section id="opening-section">
+    <div class="overlay"></div>
+    <div class="opening-content">
+      <h1 class="couple-names">Kenneth &amp; Dasha</h1>
+      <p class="wedding-date">12 Desember 2025</p>
+      <button id="open-invitation">Buka Undangan</button>
+    </div>
+  </section>
+
+    <!-- Profil Pengantin -->
+    <section id="profile-section" class="section-wrapper" data-aos="fade-up">
+      <h2 class="section-title">Profil Pengantin</h2>
+      <div class="profiles">
+        <div class="profile-card">
+          <img src="groom.jpeg" alt="Foto Mempelai 1" />
+          <h3>Kenneth Bernardo</h3>
+          <p>Putra dari Bapak Bernardo dan Ibu Catalina.</p>
+        </div>
+        <div class="profile-card">
+          <img src="bride.jpeg" alt="Foto Mempelai 2" />
+          <h3>Dasha Caliana</h3>
+          <p>Putri dari Bapak Nicol dan Ibu Desha.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quotes -->
+    <section id="quotes-section" class="section-wrapper" data-aos="fade-left">
+      <h2 class="section-title">Quotes</h2>
+      <blockquote class="quote">
+        “Dan di antara tanda (kebesaran)-Nya ialah Dia menciptakan untukmu istri-istri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan sayang.”<br /><span>— QS. Ar-Rum:21</span>
+      </blockquote>
+    </section>
+
+    <!-- Informasi Acara -->
+    <section id="info-section" class="section-wrapper" data-aos="fade-right">
+      <h2 class="section-title">Informasi Acara</h2>
+      <div class="event-info">
+        <div class="event-card">
+          <h3>Akad Nikah</h3>
+          <p><strong>Tanggal:</strong> 12 Desember 2025</p>
+          <p><strong>Waktu:</strong> 09.00 WIB</p>
+          <p><strong>Lokasi:</strong> Masjid Agung Al–Fattah, Jakarta Selatan</p>
+        </div>
+        <div class="event-card">
+          <h3>Resepsi</h3>
+          <p><strong>Tanggal:</strong> 12 Desember 2025</p>
+          <p><strong>Waktu:</strong> 11.30 – 14.00 WIB</p>
+          <p><strong>Lokasi:</strong> Gedung Serbaguna Harmoni, Jalan Melati No. 45, Jakarta Selatan</p>
+        </div>
+      </div>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.8182993056716!2d109.33178407411715!3d0.0058837999940618045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31e2a783befd7775%3A0x763845b146276fae!2sGedung%20Serbaguna%20%22Harmoni%22!5e0!3m2!1sid!2sid!4v1748833152095!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <!-- Galeri Foto -->
+    <section id="gallery-section" class="section-wrapper" data-aos="zoom-in-up">
+      <h2 class="section-title">Galeri Foto</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="galeri1.jpeg" alt="Galeri 1" /></div>
+        <div class="gallery-item"><img src="galeri2.jpeg" alt="Galeri 2" /></div>
+        <div class="gallery-item"><img src="galeri3.jpeg" alt="Galeri 3" /></div>
+        <div class="gallery-item"><img src="galeri4.jpeg" alt="Galeri 4" /></div>
+      </div>
+    </section>
+
+    <!-- Countdown -->
+    <section id="countdown-section" class="section-wrapper" data-aos="fade-up">
+      <h2 class="section-title">Hitung Mundur Menuju Hari H</h2>
+      <div id="countdown">
+        <div class="time-box">
+          <span id="days">00</span>
+          <small>Hari</small>
+        </div>
+        <div class="time-box">
+          <span id="hours">00</span>
+          <small>Jam</small>
+        </div>
+        <div class="time-box">
+          <span id="minutes">00</span>
+          <small>Menit</small>
+        </div>
+        <div class="time-box">
+          <span id="seconds">00</span>
+          <small>Detik</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- RSVP -->
+    <section id="rsvp-section" class="section-wrapper" data-aos="flip-up">
+      <h2 class="section-title">Konfirmasi Kehadiran (RSVP)</h2>
+      <form id="rsvp-form">
+        <div class="form-group">
+          <label for="guest-name">Nama</label>
+          <input type="text" id="guest-name" name="guestName" placeholder="Masukkan nama Anda" required />
+        </div>
+        <div class="form-group">
+          <label for="guest-count">Jumlah Tamu</label>
+          <input type="number" id="guest-count" name="guestCount" min="1" max="10" value="1" required />
+        </div>
+        <div class="form-group">
+          <label for="attendance">Kehadiran</label>
+          <select id="attendance" name="attendance" required>
+            <option value="" disabled selected>Pilih...</option>
+            <option value="Hadir">Hadir</option>
+            <option value="Tidak Hadir">Tidak Hadir</option>
+          </select>
+        </div>
+        <button type="submit">Kirim</button>
+        <p id="form-message" class="form-message"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+  <!-- AOS Library JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+</body>
+</html>
